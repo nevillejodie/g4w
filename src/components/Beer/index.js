@@ -43,7 +43,7 @@ beer.food_pairing.join(', ')
         beer.indredients.hops.name.map()
     )}</p>  */}
 
-<img src={beer.image_url}></img>
+<img alt="a randomly generated beer" src={beer.image_url}></img>
 
 
 <button className="beerButton" onClick={refreshPage}>I'll have another!!</button>
