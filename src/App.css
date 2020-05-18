@@ -1,38 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:#add8e6;
+}
+
+.font{
+  color:fuchsia;
+  font-family: 'Pangolin', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 25px;
+  padding-right: 52px;
+  animation-duration: 3s;
+  animation-name: bounce;
+}
+
+/* @keyframes bounce {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+.sunny{
+  padding-right: 32px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
+  padding-right: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-font{
+  padding-right: 32px;
+  font-family: 'Pangolin', cursive;
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  margin-top: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
 }
