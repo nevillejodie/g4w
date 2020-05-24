@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import "./beer.css"
+import css from "./beer.module.css"
 
 
 function Beer() {
@@ -29,24 +29,21 @@ function Beer() {
 console.log(beer)
 
 return (
-    <div>
-    <h1>{beer.name}</h1>
-    <q>{beer.tagline}</q>
-    <p>{beer.description}</p>
-    <p>This IPA goes well with {beer && beer.food_pairing && (
+    <div className={css.body}>
+    <h1 className={css.title}>{beer.name}</h1>
+    <div className={css.tagline}> <q>{beer.tagline}</q></div>
+    <p className={css.description}>{beer.description}</p>
+    <p className={css.foodpairing}>This IPA goes well with: <div className={css.actualFood}>{beer && beer.food_pairing && (
 beer.food_pairing.join(', ')
-    )}
+    )}</div>
     </p>
 
     
     {/* <p>Ingredients: {beer.ingredients && beer.ingredients.hops.name && (
         beer.indredients.hops.name.map()
     )}</p>  */}
-
-<img alt="a randomly generated beer" src={beer.image_url}></img>
-
-
-<button className="beerButton" onClick={refreshPage}>I'll have another!!</button>
+<img className={css.pint} alt="a randomly generated beer" src={beer.image_url}></img>
+<button className={css.beerButton} onClick={refreshPage}>I'll have another!</button>
 </div>
   )
 }
