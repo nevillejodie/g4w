@@ -1,5 +1,7 @@
-
 import React, {useState, useEffect} from 'react';
+import css from "./space.module.css"
+import leftarrow from "../../leftarrow.png";
+import { Link } from "react-router-dom";
 
 function Space() {
 
@@ -24,11 +26,16 @@ function Space() {
   console.log(space)
 
     return (
-      <div><h1>Astronomy Picture of the Day</h1>
+      <div className={css.body}>
       
 <div>
-   {space.explanation}
-   <a href={space.url}>Click here to watch {space.title}</a>
+<Link to="/">
+          <img src={leftarrow} alt="back arrow" className={css.leftarrow} />
+        </Link>
+<h1 className={css.title}>{space.title}</h1>
+<img src={space.url}></img>
+   <p className={css.explanation}>{space.explanation}</p>
+   
 </div>
 </div>
     )

@@ -26,9 +26,9 @@ animate={defaults.animate}
     <p className="welcome-font">
     Welcome to your App. I included some things I thought you'd like:
    </p>
-   <Link to="/space"><p>Astronomy Picture of the Day</p></Link>
-   <Link to="/beer"><p>A random beer generator</p></Link>
-   <Link to="/weather"><p>The weather forecast</p></Link>
+   <Link to="/space"><p className="link">Astronomy Picture of the Day</p></Link>
+   <Link to="/beer"><p className="link">A random beer generator</p></Link>
+   <Link to="/weather"><p className="link">The weather forecast</p></Link>
    </div>
    </div>
   )

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import css from "./beer.module.css"
-
+import bleftarrow from "../../blackleftarrow.png";
+import { Link } from "react-router-dom";
 
 function Beer() {
     const [beer, setBeer] = useState([])
@@ -29,6 +30,10 @@ function Beer() {
 console.log(beer)
 
 return (
+  <>
+  {/* <Link to="/">
+          <img src={bleftarrow} alt="back arrow" className={css.leftarrow} />
+        </Link> */}
     <div className={css.body}>
     <h1 className={css.title}>{beer.name}</h1>
     <div className={css.tagline}> <q>{beer.tagline}</q></div>
@@ -45,6 +50,7 @@ beer.food_pairing.join(', ')
 <img className={css.pint} alt="a randomly generated beer" src={beer.image_url}></img>
 <button className={css.beerButton} onClick={refreshPage}>I'll have another!</button>
 </div>
+</>
   )
 }
 

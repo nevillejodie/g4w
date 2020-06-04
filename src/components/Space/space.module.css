@@ -1,0 +1,40 @@
+.body{
+    background-color: darkslategrey;
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow: scroll;
+}
+
+img {
+    max-height:400px;
+    max-width:400px;
+    height:auto;
+    width:auto;
+}
+
+.leftarrow{
+    width: 10px;
+    height: 20px;
+    top: 150px;
+    left: 22px;
+    z-index: 5;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+.title {
+  text-align: center;
+  font-family: 'Chelsea Market', cursive;
+  color: antiquewhite;
+}
+
+.explanation{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: antiquewhite;
+}

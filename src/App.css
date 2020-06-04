@@ -12,44 +12,22 @@
   font-weight: bold;
   font-size: 30px;
   padding: 25px;
-  padding-right: 52px;
-  animation-duration: 3s;
-  animation-name: bounce;
+ 
+ 
 }
 
-/* @keyframes bounce {
-  from {
-    margin-top: 100%;
-    width: 300%; 
-  }
-  to {
-    width: 100%;
-  }
-} */
 
 .sunny{
   padding-right: 32px;
 }
 
-.App-link {
-  color: black;
-  padding-right: 32px;
-}
-
-.welcome-font{
-  padding-right: 32px;
+.link {
   font-family: 'Pangolin', cursive;
 }
 
-.button{
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  margin-top: 50px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.welcome-font{
   
+  font-family: 'Pangolin', cursive;
 }
+
+
